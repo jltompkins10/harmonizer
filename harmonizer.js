@@ -5,7 +5,7 @@ function harmonize() {
   var bass = document.getElementById("bass");
   var bassValue = parseInt(bass.options[bass.selectedIndex].value);
 
-  var bassNote = new Array ("C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B");
+  var bassNote = new Array ("C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B");
   var chord = new Array ();
   /* 1      */ chord[0] = new Array ("null");
   /* 7      */ chord[1] = new Array ("M7", "6", "mM7", "m6", "+M7", "dim");

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+	<head>
+	<title>Harmonizer</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<script type="text/javascript" src="harmonizer.js"></script>
+	<link type="text/css" rel="stylesheet" href="harmonizer.css">
+	<link rel="shortcut icon" href="https://harmonizer.xyz/favicon.png">
+
+	<meta property="og:title" content="Harmonizer" />
+	<meta property="og:url" content="https://harmonizer.xyz/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Input a melody note and a bass note, and get a list of compatible chords. Created by Convexity." />
+	<meta property="og:image:secure_url" content="https://harmonizer.xyz/favicon.png" />
+	<meta property="og:image:alt" content="The Harmonizer icon, a simple piano segment with three white keys and two black keys." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:website" content="@convexitymusic" />
+    <meta name="twitter:title" content="Harmonizer" />
+    <meta name="twitter:description" content="Input a melody note and a bass note, and get a list of compatible chords. Created by Convexity." />
+    <meta name="twitter:image" content="https://harmonizer.xyz/favicon.png" />
+
+	<meta name="theme-color" content="#625399" />
+</head>
+<body>
+	<header>
+		<h1>Harmonizer</h1>
+		<p><i>"Every note and every bass note are compatible." - Jacob Collier</i></p>
+	</header>
+
+	<main>
+		<div id="input">
+			<div id="melody-container">
+				<div>
+					<label for="melody">Melody note:</label>
+				</div>
+				<select name="melody" id="melody">
+					<option value="0" selected="selected">C</option>
+					<option value="1">Db</option>
+					<option value="2">D</option>
+					<option value="3">Eb</option>
+					<option value="4">E</option>
+					<option value="5">F</option>
+					<option value="6">Gb</option>
+					<option value="7">G</option>
+					<option value="8">Ab</option>
+					<option value="9">A</option>
+					<option value="10">Bb</option>
+					<option value="11">B</option>
+				</select>
+			</div>
+
+			<div id="bass-container">
+				<div>
+					<label for="bass">Bass note:</label>
+				</div>
+				<div>
+					<select name="bass" id="bass">
+						<option value="0" selected="selected">C</option>
+						<option value="1">Db</option>
+						<option value="2">D</option>
+						<option value="3">Eb</option>
+						<option value="4">E</option>
+						<option value="5">F</option>
+						<option value="6">Gb</option>
+						<option value="7">G</option>
+						<option value="8">Ab</option>
+						<option value="9">A</option>
+						<option value="10">Bb</option>
+						<option value="11">B</option>
+					</select>
+				</div>
+			</div>
+
+			<button id="button" type="button" onclick="harmonize();">Harmonize</button>
+		</div>
+
+		<div id="output">
+			<p>Interval:</p>
+			<b><div id="interval"></div></b>
+			<br>
+			<p>Available chords:</p>
+			<b><div id="chords"></div></b>
+		</div>
+	</main>
+
+	<footer>
+		<p>Created by <a href="https://soundcloud.com/convexity">Convexity</a>, UI by <a href="https://soundcloud.com/hey-holokin">Holokin</a>, version 1.1</p>
+		<p>Based on the resources provided by <a href="https://www.thejazzpianosite.com/">Walk That Bass</a></p>
+	</footer>
+
+
+</body></html>

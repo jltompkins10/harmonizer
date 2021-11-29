@@ -1,0 +1,135 @@
+@font-face {
+	src: url("comfortaa-regular.ttf");
+	font-family: comfortaa;
+	font-weight: regular;
+}
+
+body {
+	font-family: comfortaa;
+	
+	margin: 0;
+	color: white;
+	background-color: #393549;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1em;
+}
+
+#input {
+	width: 50%;
+	height: 100%;
+	background-color: #625399;
+	
+	display: grid;
+	grid-template-rows: 1fr 1fr 4em;
+	font-size: 18pt;
+}
+
+#melody-container, #bass-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#melody-container div, #bass-container div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#melody, #bass {
+	width: 100%;
+	height: 100%;
+	
+	font-family: comfortaa;
+	font-size: 18pt;
+	text-align: center;
+	
+	border: none;
+	background-color: #C6BEE2;
+}
+
+#melody:hover, #bass:hover {
+	width: 100%;
+	height: 100%;
+	
+	font-family: comfortaa;
+	text-align: center;
+	
+	border: none;
+	background-color: #C6BEE2;
+	
+	filter: saturate(1000%);
+}
+
+#button {
+	background-color: white;
+	border: none;
+	
+	font-family: comfortaa;
+	font-size: 18pt;
+}
+
+#button:hover {
+	background-color: #DFDFDF;
+}
+
+#button:active {
+	background-color: #BFBFBF;
+}
+
+#output {
+	padding: 0 1em 0 1em;
+	
+	width: 50%;
+	height: 100%;
+	background-color: #7B7299;
+	
+	overflow-y: scroll;
+	
+	font-size: 18pt;
+}
+
+footer {
+	padding: 0 1em 0 1em;
+}
+
+a {
+	color: white;
+}
+
+a:hover, a:visited {
+	color: #BFBFBF;
+}
+
+a:active  {
+	color: #7F7F7F
+}
+
+/*Mobile*/
+
+@media only screen and (orientation: portrait) {
+	main {
+		flex-direction: column;
+	}
+	
+	#input {
+		width: 100%;
+		height: 50%;
+	}
+	
+	#output {
+		width: calc(100% - 2em);
+		height: 50%;
+	}
+}
